@@ -5,28 +5,32 @@
  */
 
 require('./bootstrap');
-
+require('bootstrap-datepicker');
+window.feather = require('feather-icons')
 window.Vue = require('vue');
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+feather.replace();
 
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-const app = new Vue({
-    el: '#app',
+$('.datepicker').datepicker({
+    todayHighlight: true,
+    format: 'dd/mm/yyyy'
 });
+
+$(".alert-top").fadeTo(2000, 500).slideUp(500, function(){
+    $(".alert-top").slideUp(500);
+});
+
+$('[data-toggle="tooltip"]').tooltip();
+
+$('.availability').on('click', function(e){
+    $('#availability').modal('show');
+    $('input[name="id"]').val($(this).data('id'));
+});
+
+new Vue({
+    el: '#sidebar-menu',
+    data: {
+        selected: undefined
+    }
+})
+

@@ -6,7 +6,41 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome';
+@import '~bootstrap-datepicker/dist/css/bootstrap-datepicker.css';
 
 body#auth{
     background: url('/img/library.png');
 }
+
+td a.btn,
+td button.btn{
+    padding: 1px 6px !important;
+}
+
+.modal-header{
+    background-color: #343a40;
+    color: #fff;
+}
+
+.modal-header button.close{
+    color: #fff;
+    opacity: 1;
+}
+
+.page-item.active .page-link {
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+    color: #fff !important;
+}
+
+.page-link{
+    color: #343a40 !important;
+}
+
+.nav-link:hover{
+    background-color: #F8FAFC;
+    color: #343a40!important;
+}
+
+
