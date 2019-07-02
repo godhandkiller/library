@@ -18,8 +18,6 @@ También:
 
 ### Herramientas utilizadas
 
-Dillinger uses a number of open source projects to work properly:
-
 * Laravel 5.8.26
 * Laravel Telescope
 * NPM
