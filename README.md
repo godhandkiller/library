@@ -9,10 +9,10 @@ Proyecto de reclutamiento para Maniak
   - Crear un libro
   - Editar un libro
   - Eliminar un libro
-  - Saber si un libtro esta disponible o ha sido prestado a un usuario
+  - Saber si un libro esta disponible o ha sido prestado a un usuario
   - Cambiar el estatus de un libro
 
-Tambien:
+También:
   - Seleccionar a quien se ha prestrado el libro o si se ha devuelto
   - Envia un correo al usuario que se le ha prestado el libro
 
@@ -30,11 +30,11 @@ Dillinger uses a number of open source projects to work properly:
 * Bootstrap-datepicker
 * Mailtrap
 
-### Instalacion
+### Instalación
 
 Yo utilizo homestead para trabajar así que dependiendo del entorno de trabajo hay que modificar el archivo .ENV
 
-En mi configuracion mis variables de base de datos estan configuradas de la siguiente manera
+En mi configuración mis variables de base de datos estan configuradas de la siguiente manera
 ```sh
 DB_CONNECTION=mysql
 DB_HOST=localhost
@@ -56,7 +56,7 @@ como una factory para llenar la tabla con 50 libros
 ```sh
 php artisan db:seed
 ```
-Cuando se hace el seed se agregan 2 usuarios por default uno tipo **admin** y otro **user**, solo el admin tiene acceso a la apliacion por medio de un middleware. Las credenciales del admin para entrar a la apliacion son:
+Cuando se hace el seed se agregan 2 usuarios por default uno tipo **admin** y otro **user**, solo el admin tiene acceso a la apliación por medio de un middleware. Las credenciales del admin para entrar a la apliación son:
 ```sh
 mail: admin@library.com
 pass: test
