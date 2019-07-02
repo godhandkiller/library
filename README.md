@@ -88,18 +88,20 @@ $ npm run dev
 La base de datos se compone de la siguiente manera
 
 Tabla **USERS**
-| Campos            | Informacion                    |
-| -------------     | ------------------------------ |
-| id                |       |
-| name              |      |
-| email             |      |
-| email_verified_at |      |
-| password          |      |
-| remember_token    |      |
-| timestamps        |      |
-| role_id           | Llave foranea de tabla **roles**     |
+
+| Campos            | Informacion                     |
+| ------------------|---------------------------------|
+| id                |                                 |       
+| name              |                                 |
+| email             |                                 |
+| email_verified_at |                                 |
+| password          |                                 |
+| remember_token    |                                 |
+| timestamps        |                                 |
+| role_id           | Llave foranea de tabla **roles**|
 
 Tabla **ROLES**
+
 | Campos            | Informacion                    |
 | -------------     | ------------------------------ |
 | id                |       |
@@ -108,6 +110,7 @@ Tabla **ROLES**
 | timestamps        |      |
 
 Tabla **CATEGORIES**
+
 | Campos            | Informacion                    |
 | -------------     | ------------------------------ |
 | id                |       |
@@ -116,6 +119,7 @@ Tabla **CATEGORIES**
 | timestamps        |      |
 
 Tabla **BOOKS**
+
 | Campos            | Informacion                    |
 | -------------     | ------------------------------ |
 | id                |       |
@@ -125,6 +129,7 @@ Tabla **BOOKS**
 | timestamps        |      |
 | category_id           | Llave foranea de tabla **CATEGORIES**     |
 | user_id           | Llave foranea de tabla **USERS**     |
+
 
 
 
